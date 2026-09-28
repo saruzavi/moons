@@ -1,0 +1,17 @@
+<svg viewBox="0 0 33.9587 33.9588" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33.958740" height="33.958801" fill="none" customFrame="#000000">
+	<defs>
+		<linearGradient id="paint_linear_1" x1="31.3523254" x2="2.60961914" y1="2.60962391" y2="31.3523293" gradientUnits="userSpaceOnUse">
+			<stop stop-color="rgb(70,118,237)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(67,109,228)" offset="0.185399994" stop-opacity="1" />
+			<stop stop-color="rgb(60,85,205)" offset="0.486999989" stop-opacity="1" />
+			<stop stop-color="rgb(48,46,168)" offset="0.865100026" stop-opacity="1" />
+			<stop stop-color="rgb(43,30,153)" offset="1" stop-opacity="1" />
+		</linearGradient>
+	</defs>
+	<g id="Group">
+		<path id="Vector" d="M0 25.0742L0 8.88457C0 3.99516 3.99516 0 8.88457 0L25.0742 0C29.9637 0 33.9588 3.99516 33.9588 8.88457L33.9588 25.0742C33.9588 29.9637 29.9637 33.9588 25.0742 33.9588L19.6274 33.9588L16.782 33.262L14.3315 33.9588L8.88457 33.9588C3.99516 33.9588 0 29.9637 0 25.0742Z" fill="url(#paint_linear_1)" fill-rule="nonzero" />
+		<g id="Group">
+			<path id="Vector" d="M23.5878 22.4495L24.3427 17.5369L19.6275 17.5369L19.6275 14.3547C19.6275 13.0075 20.2895 11.7067 22.3916 11.7067L24.5285 11.7067L24.5285 7.52577C24.5285 7.52577 22.589 7.18896 20.7308 7.18896C16.8518 7.18896 14.32 9.53496 14.32 13.7972L14.32 17.5369L10.0112 17.5369L10.0112 22.4495L14.32 22.4495L14.32 33.9588L19.6275 33.9588L19.6275 22.4495L23.5878 22.4495Z" fill="rgb(255,255,255)" fill-rule="nonzero" />
+		</g>
+	</g>
+</svg>

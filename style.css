@@ -1,0 +1,562 @@
+:root {
+    --vinous: #7C3062;
+    --black: #000000;
+    --mediumOrchid: #8b4c9b;
+    --darkOrchid: #664178;
+    --MistyRose: #e5daf1;
+
+    --darkmode: #1A1918;
+    --DustyCoal: #222222;
+    --Darkstone: #3e3e3e;
+    --Warmcoal: #3b3a39;
+
+    --Creamwhite: #F4EFEA;
+    --Dustygraybeige: #B8B0A9;
+    --Mutedgray: #7A736E;
+
+    --Sandgold: #E8C396;
+    --Pulss: #d9b88f;
+
+    --Champagne: #f5e4c8;
+    --Platinum: #d6dce7;
+    --Milkofcream: #fbf4e9;
+
+    --Free: #F7E897;
+    --Monthly: #E3C6C6;
+    --Yearly: #D4E4A9;
+}
+
+html {
+    scroll-padding: 100px;
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Unbounded", sans-serif;
+    background-color: var(--darkmode);
+}
+
+.header {
+    padding-block: 30px;
+    position: fixed;
+    width: 100%;
+    background: var(--DustyCoal);
+    z-index: 999;
+    top: 0%;
+}
+
+main {
+    margin-top: 141px;
+}
+
+[class*="__container"] {
+    max-width: 1069px;
+    margin-inline: auto;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header__list {
+    display: flex;
+    gap: 49px;
+}
+
+ul {
+    list-style: none;
+}
+
+.header__list-link {
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -0.47px;
+    color: var(--Creamwhite);
+    transition: color 0.3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header__list-link.active {
+    color: var(--Creamwhite);
+}
+
+.header__list-link:hover { 
+    color: var(--Champagne);
+    text-decoration: underline;
+    text-decoration-color: var(--Champagne);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+}
+
+.header__button, .hero__button {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    color: var(--Creamwhite);
+    padding: 19px 35px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.header__button {
+     background-color: var(--Warmcoal);
+}
+
+.header__button:hover, .hero__button:hover {
+    opacity: 85%;
+}
+
+.hero {
+    padding-block: 70px;
+}
+
+.hero__container {
+    position: relative;
+}
+
+.hero__content {
+    max-width: 660px;
+    padding-block: 92px;
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 0px 0px rgba(245, 228, 200, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 100px 4px rgba(245, 228, 200, 0.3);
+    }
+}
+
+.hero__image img {
+    display: block;
+    width: 100%;
+}
+
+.hero__image {
+    position: absolute;
+    top: 37px;
+    right: -50px;
+    width: 370px;
+    border-radius: 70px;
+    animation: glow 5s ease-in-out infinite;
+
+}
+
+.hero__tittle {
+    font-family: "Unbounded";
+    font-weight: 600;
+    font-size: 80px;
+    letter-spacing: -2.25px;
+    color: var(--Creamwhite);
+    line-height: 77px;
+}
+
+.hero__desc {
+    font-family: "Cormorant Unicase", sans-serif;
+    font-size: 24px;
+    letter-spacing: -0.63px;
+    color: var(--Dustygraybeige);
+    line-height: 30px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.hero__buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+
+.hero__button {
+    background: var(--Warmcoal);
+}
+
+.companies {
+    padding-block: 30px;
+}
+
+.companies__list {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    gap: 20px;
+}
+
+.companies__company img {
+    filter: grayscale(2);
+     transition: filter 0.9s ease;
+}
+
+.companies__company img:hover {
+    filter: grayscale(0);
+}
+
+.features {
+    padding-block: 120px;
+}
+
+.features__container {
+    display: flex;
+    flex-direction: column;
+    gap: 69px
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature__image {
+    width: 473px;
+    border-radius: 70px;
+    margin-top: 20px;
+}
+
+.feature__content {
+    max-width: 459px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.feature__title {
+    font-family: "Unbounded", sans-serif;
+    font-size: 35px;
+    line-height: 30px;
+    letter-spacing: -0.9px;
+    color: var(--Creamwhite);
+}
+
+.feature__desc {
+    font-family: "Cormorant Unicase";
+    font-size: 18px;
+    font-weight:600;
+    color: var(--Dustygraybeige);
+}
+
+.feature__link {
+    font-family: "Cormorant Unicase";
+    font-size: 18px;
+    font-weight: 600;
+    color:var(--Creamwhite);
+}
+
+.feature__link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.companies_NZ {
+    padding-block: 200px;
+}
+
+.companies__list_NZ {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    gap: 20px;
+}
+
+.companies__company_NZ img {
+    filter: grayscale(2);
+     transition: filter 0.9s ease;
+}
+
+.companies__company_NZ img:hover {
+    filter: grayscale(0);
+}
+
+
+
+
+
+.subscription {
+    padding-block-end: 200px;
+}
+
+.subscription__container {
+    display: flex;
+    flex-direction: column;
+    gap: 82px;
+}
+
+.subscription__header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.subscription__title {
+    font-family: "Unbounded";
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--Creamwhite);
+    letter-spacing: -1.88px;
+    line-height: 70px;
+}
+
+.subscription__tabs {
+    display: flex;
+    border-radius: 40px;
+    gap: 0px;
+    border-block: 1px solid var(--Champagne);
+    border-block: 1px solid var(--DustyCoal);
+    background-color: var(--Warmcoal);
+}
+
+.subscription__tab {
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--Creamwhite);
+    letter-spacing: 0.5px;
+    border: none;
+    background: var(--Warmcoal) ;
+    padding: 16px 36px;
+    border-radius: 30px; 
+}
+
+.subscription__tab.active {
+    background-color: var(--Champagne);
+    color: var(--darkmode);
+}
+
+.subscription__plans {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.subscription__plan-title {
+    font-family: "Unbounded";
+    color: var(--Champagne) ;
+    letter-spacing: -0.2px;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    padding-top: 20px;
+    font-weight: 600;
+}
+
+.subscription__plan-price {
+    font-family: "Unbounded";
+    color: var(--Champagne);
+    text-align: center;
+    font-size: 27px;
+    margin: 0 0 32px 0;
+}
+
+.subscription__plan-feature {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px 80px;
+}
+
+.subscription__plan-feature span {
+  display: block;
+  margin: 12px 0px;
+}
+
+.subscription__plan {
+    padding: 36px 36px 36px;
+    background: var(--DustyCoal);
+    border-radius: 50px;
+    font-family: "Unbounded";
+    font-size: 16px;
+}
+
+.subscription__plan-button {
+    color: var(--Champagne);
+    display: table;
+    margin-top: auto;
+    margin: auto;
+    font-weight: 600;
+
+}
+
+
+/* Прячем радио */
+.toggle-input { display: none; }
+
+.subscription__plan-button {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Обёртка блока — по умолчанию схлопнута в 0 */
+.plan-info {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.6s ease;
+}
+
+.plan-info__inner {
+  overflow: clip;
+  overflow-clip-margin: 40px;
+}
+
+/* Сам фон-карточка */
+.plan-info__card {
+    display: none;
+    margin-top: 16px;
+    padding: 24px;
+    border-radius: 40px;
+    background: #222222;
+}
+
+
+/* Раскрываем блок, когда выбран любой тариф */
+.toggle-input:checked + .plan-info {
+  grid-template-rows: 1fr;
+}
+
+.toggle-input:checked + .plan-info .plan-info__card {
+    display: block;
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(0.2px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.plan-info__card--free    .subscription__plan-feature { color: #F7E897; }
+.plan-info__card--monthly .subscription__plan-feature { color: #E3C6C6; }
+.plan-info__card--yearly  .subscription__plan-feature { color: #D4E4A9; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   КАРТОЧКА ПЛАНА — ОСНОВА
+========================================= */
+.subscription__plan {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: 1px solid transparent;
+    transition: background 4.3s ease, box-shadow 1.3s ease, border-color 1.6s ease;
+}
+
+.subscription__plan > * {
+    position: relative;
+    z-index: 5;
+    transition: color 0.5s ease;
+}
+
+/* =========================================
+   СЛОЙ 1: МАТОВОЕ СТЕКЛО (снизу)
+========================================= */
+.subscription__plan::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: rgba(59, 58, 57, 0.5);
+    backdrop-filter: blur(80px);
+    -webkit-backdrop-filter: blur(42px);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* =========================================
+   СЛОЙ 2: ЗВЁЗДЫ. бля буду, не перепутай ничего. ВНИМАТЕЛЬНО Я ТЕБЯ УМОЛЯЮ
+========================================= */
+.subscription__plan::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background-image:
+        radial-gradient(11px 11px at 20px 30px, rgba(251,244,233, 2), transparent),
+        radial-gradient(32px 32px at 150px 90px, rgba(214,220,231, 3), transparent),
+        radial-gradient(17px 15px at 80px 170px, rgba(245,228,200, 3), transparent),
+        radial-gradient(25px 31px at 100px 50px, rgba(244,239,234, 3), transparent),
+        radial-gradient(12px 12px at 40px 140px, rgba(251,244,233, 5), transparent),
+        radial-gradient(19px 14px at 180px 180px, rgba(244,239,234, 1), transparent),
+        radial-gradient(12.5px 18.5px at 60px 20px, rgba(244,239,234, 1), transparent);
+    background-size: 200px 200px;
+    background-repeat: repeat;
+    filter: blur(34px);
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: 2;
+    pointer-events: none;
+}
+
+@keyframes fallingStars {
+    from { background-position: 0 0; }
+    to   { background-position: 200PX 200px; }
+}
+
+/* =========================================
+   НАВЕДЕНИЕ
+========================================= */
+.subscription__plan:hover * {
+    border-color: rgba(34,34,34, 0.5);
+
+}
+
+.subscription__plan:hover::before {
+    opacity: 40px;
+}
+
+
+
+.subscription__plan:hover::after {
+    opacity: 10;
+    animation: fallingStars 10s linear infinite;
+}
+
+
+.subscription__container:has(#toggle-free:checked)    .subscription__plans .subscription__column:nth-child(1) * { color: #F7E897; }
+.subscription__container:has(#toggle-monthly:checked) .subscription__plans .subscription__column:nth-child(2) * { color: #E3C6C6; }
+.subscription__container:has(#toggle-yearly:checked)  .subscription__plans .subscription__column:nth-child(3) * { color: #D4E4A9; }
+
+.site-footer {
+  background: #222222;
+  color: var(--Creamwhite);
+  padding: 24px 16px;
+  text-align: center;
+}

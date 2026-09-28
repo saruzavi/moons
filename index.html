@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOON LIGHT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="header__container">
+        <nav class="header__nav">
+            <img src="images/logotex.svg" alt="">
+        <ul class="header__list">
+            <li class="header__list-item">
+                <a class="header__list-link active" href="/">Home</a>
+            </li>
+            <li class="header__list-item">
+                <a class="header__list-link" href="/">Features</a>
+            </li>
+            <li class="header__list-item">
+                <a class="header__list-link" href="/">Pricing</a>
+            </li>
+            <li class="header__list-item">
+                <a class="header__list-link" href="/">Blog</a>
+            </li>
+         </ul>
+            <a class="header__button" href="/">Get Started</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__tittle">MOON LIGHT СВЕТ ТВОЕГО НАСТРОЕНИЯ</h1>
+                    <p class="hero__desc">MOON Light создает пространство, где царит гармония. Мы объединяем эстетику ночного светила с современными технологиями, чтобы наполнить ваш дом теплом и уютом.</p>
+                </div>
+                <div class="hero__buttons">
+                    <a class="hero__button" href="/">Смотреть коллекцию</a>
+                    <a class="hero__arrow" href="#companies"><img src="images/strel.svg" alt=""></a>
+                </div>
+            </div>
+            <img class="hero__image" src="images/moonlamp.jpg" alt="">
+        </div>
+    </section>
+    <section class="companies" id="companies">
+        <div class="companies__container">
+            <ul class="companies__list">
+                <li class="companies__company">
+                    <img src="images/logos/1.svg" alt="" class="companies__company-logo">
+                </li>
+                <li class="companies__company">
+                    <img src="images/logos/2.svg" alt="" class="companies__company-logo">
+                </li>
+                <li class="companies__company">
+                    <img src="images/logos/3.svg" alt="" class="companies__company-logo">
+                </li>
+                <li class="companies__company">
+                    <img src="images/logos/4.svg" alt="" class="companies__company-logo">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="features">
+        <div class="features__container">
+           <div class="feature">
+            <img class="feature__image" src="images/moonst.jpg" alt="">
+            <div class="feature__content">
+                <h3 class="feature__title">Точка притяжения вашего пространствa</h3>
+                <p class="feature__desc">Откройте для себя MOON Light — освещение, которое меняет настроение всего пространства. Идеальное сочетание дикой природы и современного дизайна.</p>
+                <a class="feature__link" href="/">Смотреть</a>
+            </div>
+           </div>
+           <div class="feature">
+            <div class="feature__content">
+                <h3 class="feature__title">Твоя Луна. Твои эмоции.</h3>
+                <p class="feature__desc">Почувствуйте, как пространство вокруг вас оживает, отражая ваши чувства в мягком лунном свете.</p>
+                <a class="feature__link" href="/">Узнать больше</a>
+            </div>
+           <img class="feature__image" src="images/moontel.jpg" alt="">
+        </div> 
+        </div>
+    <section class="companies_NZ" id="companies">
+        <div class="companies__container_NZ">
+            <ul class="companies__list_NZ">
+                <li class="companies__company_NZ">
+                    <img src="images/logos/1.svg" alt="" class="companies__company-logo_NZ">
+                </li>
+                <li class="companies__company_NZ">
+                    <img src="images/logos/2.svg" alt="" class="companies__company-logo_NZ">
+                </li>
+                <li class="companies__company_NZ">
+                    <img src="images/logos/3.svg" alt="" class="companies__company-logo_NZ">
+                </li>
+                <li class="companies__company_NZ">
+                    <img src="images/logos/4.svg" alt="" class="companies__company-logo_NZ">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="subscription">
+        <div class="subscription__container">
+            <header class="subscription__header">
+                <h2 class="subscription__title">Выберите свой <br> ритм света</h2>
+                <div class="subscription__tabs">
+                    <button class="subscription__tab active">Год</button>
+                    <button class="subscription__tab">Месяц</button>
+                </div>
+            </header>
+            <div class="subscription__plans">
+                <div class="subscription__column">
+                    <div class="subscription__plan">
+                        <p class="subscription__plan-title">Базовый (Free)</p>
+                        <h2 class="subscription__plan-price">Навсегда 0 ₽</h2>
+                        <label for="toggle-free" class="subscription__plan-button">Хочу</label>
+                </div>
+                <input type="radio" name="plan-toggle" id="toggle-free" class="toggle-input">
+                <div class="plan-info">
+                    <div class="plan-info__inner">
+                        <div class="plan-info__card plan-info__card--free">
+                            <p class="subscription__plan-feature">
+                                <span>Ручное управление</span>
+                                <span>2 базовых режима (Focus, Sleep)</span>
+                                <span>Базовое расписание</span>
+                                <span>1 кастомная сцена</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="subscription__column">
+                <div class="subscription__plan">
+                    <p class="subscription__plan-title">Премиум (Monthly)</p>
+                    <h2 class="subscription__plan-price">499 ₽ / месяц</h2>
+                    <label for="toggle-monthly" class="subscription__plan-button">Узнать</label>
+                </div>
+                <input type="radio" name="plan-toggle" id="toggle-monthly" class="toggle-input">
+                <div class="plan-info">
+                    <div class="plan-info__inner">
+                        <div class="plan-info__card plan-info__card--monthly">
+                            <p class="subscription__plan-feature">
+                                <span>Всё из Базового (Free)</span>
+                                <span>Полный ИИ-анализ настроения</span>
+                                <span>Все 4+ режима (Relax, Romantic)</span>
+                                <span>Неограниченно кастомных сцен</span>
+                                <span>Голосовое управление (Siri/Google)</span>
+                                <span>Синхронизация с биоритмами</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="subscription__column">
+                    <div class="subscription__plan">
+                        <p class="subscription__plan-title">Премиум (Yearly)</p>
+                        <h2 class="subscription__plan-price">3 990 ₽ / год</h2>
+                        <label for="toggle-yearly" class="subscription__plan-button">Подробнее</label>
+                    </div>
+                <input type="radio" name="plan-toggle" id="toggle-yearly" class="toggle-input">
+                <div class="plan-info">
+                    <div class="plan-info__inner"></div>
+                    <div class="plan-info__card plan-info__card--yearly">
+                        <p class="subscription__plan-feature">
+                            <span>Всё из Премиум (Monthly)</span>
+                            <span>Выгода 33% (2 месяца в подарок)</span>
+                            <span>Приоритетная поддержка 24/7</span>
+                            <span>Облачное хранилище настроек</span>
+                            <span>Интеграция с Умным домом</span>
+                            <span>Мульти-профиль (для всей семьи)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+  <footer class="site-footer">
+    © 2026 MOON LIGHT
+  </footer>
+</body>
+</body>
+</html>
